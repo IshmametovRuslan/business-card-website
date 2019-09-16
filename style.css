@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+header {
+  width: 100%;
+  background: #000000;
+  display: flex; }
+  header .header__logo {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 56px;
+    margin-left: 12%; }
+  header nav {
+    margin-top: 56px;
+    margin-left: 29%; }
+    header nav .topnav a {
+      color: #fff;
+      text-align: center;
+      padding: 12px 16px;
+      font-size: 14px;
+      font-weight: bold; }
+      header nav .topnav a:hover {
+        border-bottom: 3px solid #fcac45; }
+      header nav .topnav a.icon {
+        display: none; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  main .main__welcome {
+    background: #000000;
+    text-align: center;
+    padding: 200px 0 410px 0; }
+    main .main__welcome h1 {
+      color: #999999;
+      font-size: 44px;
+      font-weight: normal; }
+      main .main__welcome h1 .redcompany {
+        color: #fcac45;
+        font-weight: bold; }
+    main .main__welcome p {
+      color: #999999;
+      font-size: 20px; }
+      main .main__welcome p span {
+        font-weight: bold; }
+  main .wrapper {
+    width: 75%;
+    margin: 0 auto; }
+    main .wrapper .main__about {
+      display: flex;
+      padding: 100px 0 100px 0; }
+      main .wrapper .main__about .about__left .mw {
+        min-width: 100%; }
+      main .wrapper .main__about .about__right {
+        margin-left: 175px; }
+        main .wrapper .main__about .about__right h1 {
+          display: inline-block;
+          border-bottom: 3px solid #fcac45;
+          padding-bottom: 20px;
+          font-weight: normal; }
+          main .wrapper .main__about .about__right h1 .about {
+            font-weight: bold; }
+        main .wrapper .main__about .about__right p {
+          margin: 30px 0 50px;
+          color: #6c6c6c;
+          font-size: 18px; }
+        main .wrapper .main__about .about__right li {
+          background: url("img/mark.png") 0 no-repeat;
+          padding-left: 25px;
+          margin-top: 10px;
+          color: #5a5a5a;
+          font-weight: bold; }
+          main .wrapper .main__about .about__right li span {
+            font-style: italic;
+            font-weight: normal; }
+
+@media screen and (max-width: 1366px) {
+  header nav {
+    margin-left: 25%; }
+
+  main .wrapper .main__about .about__right {
+    margin-left: 80px; } }
+@media screen and (max-width: 1256px) {
+  header nav {
+    margin-left: 20%; } }
+@media screen and (max-width: 1165px) {
+  header nav {
+    margin-left: 10%; }
+
+  main .wrapper .main__about .about__right {
+    margin-left: 50px; } }
+@media screen and (max-width: 1030px) {
+  header nav {
+    width: 100%; }
+    header nav .topnav a {
+      display: none; }
+      header nav .topnav a.icon {
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: #fff;
+        font-size: 25px; }
+    header nav .topnav.responsive {
+      position: relative;
+      top: 50px;
+      left: -200px;
+      height: 340px; }
+      header nav .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left; }
+        header nav .topnav.responsive a.icon {
+          position: absolute;
+          top: -50px;
+          right: -200px; }
+
+  main .main__welcome {
+    padding: 100px 0; }
+  main .wrapper .main__about {
+    flex-direction: column; }
+    main .wrapper .main__about .about__left .mw {
+      max-width: 90%; }
+    main .wrapper .main__about .about__right {
+      text-align: center;
+      margin-left: 0; }
+      main .wrapper .main__about .about__right h1 {
+        font-size: 20px;
+        margin-top: 10px; }
+      main .wrapper .main__about .about__right li {
+        text-align: left; } }
+@media screen and (max-width: 768px) {
+  main .main__welcome {
+    padding: 50px 0; }
+    main .main__welcome h1 {
+      font-size: 25px; }
+    main .main__welcome p {
+      font-size: 18px; } }
+
+/*# sourceMappingURL=style.css.map */
