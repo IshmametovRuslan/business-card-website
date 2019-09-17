@@ -72,14 +72,17 @@ main {
             color: #999999;
             font-size: 44px;
             font-weight: normal;
+
             .redcompany {
                 color: #fcac45;
                 font-weight: bold;
             }
         }
+
         p {
             color: #999999;
             font-size: 20px;
+
             span {
                 font-weight: bold;
             }
@@ -108,6 +111,7 @@ main {
                     border-bottom: 3px solid #fcac45;
                     padding-bottom: 20px;
                     font-weight: normal;
+
                     .about {
                         font-weight: bold;
                     }
@@ -134,15 +138,57 @@ main {
             }
         }
     }
+
+    .main__team {
+        background: #000000;
+        text-align: center;
+        padding: 100px 0 170px;
+        color: #ffffff;
+
+        h1 {
+            font-size: 44px;
+            font-weight: normal;
+            padding-bottom: 30px;
+        }
+
+        .line {
+            width: 100px;
+            height: 5px;
+            background: #fcac45;
+            position: relative;
+            margin: 0 auto 85px;
+        }
+
+        .team__cards {
+            display: flex;
+
+            .card {
+                padding: 0 25px;
+
+                .photo {
+                    margin: 20px auto;
+                    width: 130px;
+                    height: 130px;
+                    background-color: #d7d7d7;
+                    border-radius: 50%;
+                }
+
+                h4 {
+                    font-size: 24px;
+                    margin-bottom: 13px;
+                }
+
+                .position {
+                    margin-bottom: 35px;
+                }
+
+                .about__position {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 1366px) {
@@ -238,11 +284,13 @@ main {
         .wrapper {
             .main__about {
                 flex-direction: column;
+
                 .about__left {
                     .mw {
                         max-width: 90%;
                     }
                 }
+
                 .about__right {
                     text-align: center;
                     margin-left: 0;
@@ -253,15 +301,21 @@ main {
                     }
 
                     li {
-                        text-align: left    ;
+                        text-align: left;
                     }
                 }
+            }
+        }
+
+        .main__team {
+            .team__cards {
+                flex-direction: column;
             }
         }
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     main {
         .main__welcome {
             padding: 50px 0;
