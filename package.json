@@ -2,7 +2,7 @@
   "name": "business-card-website",
   "version": "1.0.0",
   "description": "",
-  "main": "scripts.js",
+  "main": "app/js/scripts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,14 @@
   },
   "homepage": "https://github.com/IshmametovRuslan/business-card-website#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-image": "^5.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.12.0"
   }
 }
