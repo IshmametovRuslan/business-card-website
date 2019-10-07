@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,400,500,600,700&display=swap');
 
 * {
     margin: 0;
@@ -243,8 +243,20 @@ main {
 
     .main__testimonials {
         text-align: center;
+        padding: 100px 0 175px;
+        background-color: #000;
+        color: #fff;
         h1 {
-
+            margin-bottom: 30px;
+            font-weight: 200;
+            span {font-weight: 500 !important;}
+        }
+        p {
+            max-width: 62%;
+            margin: 50px auto 0;
+            &:first-child {
+                font-size: 18px;
+            }
         }
     }
 }
