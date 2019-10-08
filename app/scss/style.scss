@@ -171,6 +171,12 @@ main {
                     height: 130px;
                     background-color: #d7d7d7;
                     border-radius: 50%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
                 }
 
                 h4 {
@@ -231,6 +237,7 @@ main {
         h1 {
             font-weight: normal;
             margin-bottom: 30px;
+
             span {
                 font-weight: 600;
             }
@@ -241,22 +248,142 @@ main {
         }
     }
 
+    .main__work {
+        text-align: center;
+        padding: 100px 0 105px;
+        .line1,
+        .line2,
+        .line3 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            img {
+                margin: 15px;
+            }
+
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        p {
+            margin-bottom: 180px;
+        }
+    }
+
     .main__testimonials {
         text-align: center;
         padding: 100px 0 175px;
         background-color: #000;
         color: #fff;
+
         h1 {
             margin-bottom: 30px;
-            font-weight: 300;
-            span {font-weight: 600 !important;}
+            font-weight: 600;
+
+            span {
+                font-weight: 300 !important;
+            }
         }
+
         p {
             max-width: 62%;
             margin: 50px auto 0;
+
             &:first-child {
                 font-size: 18px;
             }
+        }
+    }
+
+    .main__contact {
+        width: 100%;
+
+        .contact__wrapper {
+            width: 50%;
+            text-align: center;
+            margin: auto;
+            padding: 100px 0 105px;
+
+            label {
+                margin: 0 0 10px;
+            }
+
+
+            .red {
+                color: red;
+            }
+
+            h1 {
+                margin-bottom: 30px;
+                font-size: 44px;
+                font-weight: 600;
+            }
+
+            p {
+                margin-bottom: 100px;
+                color: #6c6c6c;
+            }
+
+            form {
+                text-align: left;
+                color: #6c6c6c;
+
+                .block__inputs {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    column-gap: 30px;
+
+                    .form__group {
+                        width: 100%;
+                        margin-bottom: 30px;
+
+                        input {
+                            width: 100%;
+                            height: 40px;
+                            padding: 10px;
+                            font-size: 16px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+
+                textarea {
+                    width: 100%;
+                    height: 165px;
+                    margin-bottom: 30px;
+                    padding: 10px;
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+
+                input[type='submit'] {
+                    width: 165px;
+                    height: 40px;
+                    background-color: #fcac45;
+                    color: #ffffff;
+                    border: none;
+                    font-size: 16px;
+                    float: right;
+                    margin-top: 10px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        height: 90px;
+        background-color: #222222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            margin-right: 40px;
         }
     }
 }
@@ -383,6 +510,19 @@ main {
                 flex-direction: column;
             }
         }
+
+        .main__work {
+            .gallery {
+                .line1,
+                .line2,
+                .line3 {
+                   img:not(:first-child) {
+                        display: none;
+                   }
+                }
+
+            }
+        }
     }
 }
 
@@ -403,9 +543,28 @@ main {
         .main__services {
             .wrapper {
                 .services__cards {
-                        grid-template-columns: auto;
+                    grid-template-columns: auto;
                 }
             }
+        }
+
+        .main__contact {
+            .contact__wrapper {
+                width: 70%;
+                form {
+                    .block__inputs {
+                        grid-template-columns: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        footer {
+            flex-wrap: wrap;
         }
     }
 }
